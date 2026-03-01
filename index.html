@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="particulas"></div>
+
+    <header>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li><a href="#sobre" class="menu-link">SOBRE </a></li>
+          <li><a href="#projetos" class="menu-link">PROJETOS </a></li>
+          <li><a href="#contato" class="menu-link">CONTATO </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Sobre mim -->
+    <main id="inicio" class="cabecalho">
+      <div>
+        <img
+          src="img/foto2.jpg"
+          alt="Foto de Dyuwellem Santos Romana"
+          class="foto-perfil"
+        />
+
+        <h1>Dyuwellem Santos Romana</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedora Full-Stack</p>
+      </div>
+      <br />
+
+      <section id="sobre" class="sobre">
+        <div tudo-sobre>
+          <br /><br /><br />
+          <h2 class="sobre-titulo">Sobre Mim</h2>
+          <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+              Olá, tudo bem? eu me chamo Dyuwellem Santos Romana. Sou estudante
+              de Ciência da Computação e venho construindo minha trajetória na
+              tecnologia com curiosidade, senso estético e uma vontade constante
+              de evoluir. Meu ponto de partida é o front-end, onde encontrei um
+              espaço para unir lógica e sensibilidade visual, não apenas fazendo
+              interfaces funcionarem, mas pensando em como elas são percebidas,
+              usadas e sentidas por quem está do outro lado da tela.
+            </p>
+            <br />
+
+            <p class="sobre-paragrafo">
+              Com o tempo, meu interesse passou a ir além da interface. Tenho
+              buscado compreender também o que acontece por trás das aplicações,
+              desenvolvendo uma visão mais ampla do desenvolvimento e conectando
+              experiência do usuário, estrutura de sistemas e solução de
+              problemas de forma integrada.
+            </p>
+            <br />
+
+            <p class="sobre-paragrafo">
+              Mais do que dominar ferramentas específicas, me interesso pelo
+              processo de construir: aprender, testar, errar, ajustar e melhorar
+              continuamente. Neste momento, procuro oportunidades que me
+              permitam crescer junto com outras pessoas — ambientes
+              colaborativos, onde seja possível trocar conhecimento, participar
+              de decisões e entender como as ideias se transformam em produtos
+              reais. Acredito que a evolução na tecnologia acontece em conjunto,
+              na convivência com equipes que compartilham desafios, aprendizados
+              e responsabilidades.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br /><br />
+    <br /><br />
+
+    <!-- Meus Projetos -->
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus Projetos</h2>
+      <div class="projetos-caixa">
+        <div class="projetos-card" onclick="abrirProjeto1()">
+          <img src="img/form.png" alt="" class="projetos-imagem" />
+          <div class="caixa-textos-projeto"></div>
+          <h3 class="info-projetos">Formulário</h3>
+          <p class="paragrafo-projetos">
+            Formulário desenvolvido com foco em usabilidade e validação de
+            dados. Interface simples, intuitiva e funcional. Projeto que reforça
+            minha evolução no front-end.
+          </p>
+        </div>
+
+        <!--<div class="projetos-card">
+          <img src="img/frontend-proj.jpg" alt="" class="projetos-imagem" />
+          <div class="caixa-textos-projeto"></div>
+          <h3 class="info-projetos">Frontend</h3>
+          <p class="paragrafo-projetos">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            laboriosam totam incidunt ut doloremque, eius dolores vero quibusdam
+            esse ducimus. Tenetur dicta rem, rerum ipsam quod dolores eaque.
+            Explicabo, quam.
+          </p>
+        </div> -->
+
+        <!-- <div class="projetos-card">
+          <img src="img/backend-proj.jpg" alt="" class="projetos-imagem" />
+          <div class="caixa-textos-projeto"></div>
+          <h3 class="info-projetos">Backend</h3>
+          <p class="paragrafo-projetos">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            laboriosam totam incidunt ut doloremque, eius dolores vero quibusdam
+            esse ducimus. Tenetur dicta rem, rerum ipsam quod dolores eaque.
+            Explicabo, quam.
+          </p>
+        </div>-->
+      </div>
+    </section>
+
+    <section id="contato" class="contatos">
+      <h2 class="contatos-titulo">Entre em contato</h2>
+      <form
+        class="formulario-contato"
+        id="formulario"
+        onsubmit="enviarWhats(event)"
+      >
+        <div class="grupo-form">
+          <input placeholder="Nome" class="campo-form" id="nome" />
+        </div>
+
+        <div class="grupo-form">
+          <textarea
+            class="campo-form"
+            placeholder="Digite sua Mensagem"
+            rows="4"
+            id="mensagem"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="botao-form">Enviar WhatsApp</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
