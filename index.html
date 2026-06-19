@@ -21,16 +21,19 @@
 
     <!--Sobre mim -->
     <main id="inicio" class="cabecalho">
-      <div>
+      <div class="container-foto">
         <img
-          src="img/foto2.jpg"
+          src="img/foto1.JPG"
           alt="Foto de Dyuwellem Santos Romana"
           class="foto-perfil"
         />
 
-        <h1>Dyuwellem Santos Romana</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedora Full-Stack</p>
+        <div class="div-h1-subti">
+          <h1>Dyuwellem Santos Romana</h1>
+          <p class="cabecalho-sub-titulo">Desenvolvedora Full-Stack</p>
+        </div>
       </div>
+      <br />
       <br />
 
       <section id="sobre" class="sobre">
@@ -39,40 +42,43 @@
           <h2 class="sobre-titulo">Sobre Mim</h2>
           <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-              Olá, tudo bem? eu me chamo Dyuwellem Santos Romana. Sou estudante
-              de Ciência da Computação e venho construindo minha trajetória na
-              tecnologia com curiosidade, senso estético e uma vontade constante
-              de evoluir. Meu ponto de partida é o front-end, onde encontrei um
-              espaço para unir lógica e sensibilidade visual, não apenas fazendo
-              interfaces funcionarem, mas pensando em como elas são percebidas,
-              usadas e sentidas por quem está do outro lado da tela.
+              Olá, eu sou Dyuwellem Santos Romana, estudante de Ciência da
+              Computação e Desenvolvedora Full Stack em constante evolução. A
+              tecnologia se tornou para mim muito mais do que uma área de
+              estudo: é um espaço de construção, aprendizado e transformação
+              contínua. Minha trajetória começou no desenvolvimento front-end,
+              onde descobri a capacidade de unir lógica, criatividade e
+              experiência do usuário para criar interfaces intuitivas e
+              significativas. Com o tempo, ampliei minha visão para além da
+              camada visual, aprofundando meus conhecimentos em desenvolvimento
+              Full Stack e buscando compreender como cada parte de uma aplicação
+              se conecta para entregar soluções completas.
             </p>
             <br />
 
             <p class="sobre-paragrafo">
-              Com o tempo, meu interesse passou a ir além da interface. Tenho
-              buscado compreender também o que acontece por trás das aplicações,
-              desenvolvendo uma visão mais ampla do desenvolvimento e conectando
-              experiência do usuário, estrutura de sistemas e solução de
-              problemas de forma integrada.
+              Acredito que crescer na tecnologia significa aprender todos os
+              dias. Por isso, estou sempre explorando novas ferramentas,
+              aprimorando minhas habilidades e enfrentando desafios que me
+              permitam evoluir tanto tecnicamente quanto profissionalmente. Cada
+              projeto representa uma oportunidade de aprender algo novo, testar
+              ideias, resolver problemas e desenvolver soluções cada vez
+              melhores.
             </p>
             <br />
 
             <p class="sobre-paragrafo">
-              Mais do que dominar ferramentas específicas, me interesso pelo
-              processo de construir: aprender, testar, errar, ajustar e melhorar
-              continuamente. Neste momento, procuro oportunidades que me
-              permitam crescer junto com outras pessoas — ambientes
-              colaborativos, onde seja possível trocar conhecimento, participar
-              de decisões e entender como as ideias se transformam em produtos
-              reais. Acredito que a evolução na tecnologia acontece em conjunto,
-              na convivência com equipes que compartilham desafios, aprendizados
-              e responsabilidades.
+              Tenho interesse em ambientes colaborativos, onde o conhecimento é
+              compartilhado e a inovação acontece através do trabalho em equipe.
+              Busco oportunidades que me permitam contribuir com dedicação,
+              criatividade e vontade de aprender, enquanto continuo construindo
+              uma carreira sólida no desenvolvimento de software.
             </p>
           </div>
         </div>
       </section>
     </main>
+
     <br /><br />
     <br /><br />
 
@@ -81,27 +87,48 @@
       <h2 class="projetos-titulo">Meus Projetos</h2>
       <div class="projetos-caixa">
         <div class="projetos-card" onclick="abrirProjeto1()">
-          <img src="img/form.png" alt="" class="projetos-imagem" />
+          <img src="img/projeto-clima1.png" alt="" class="projetos-imagem" />
           <div class="caixa-textos-projeto"></div>
-          <h3 class="info-projetos">Formulário</h3>
+          <h3 class="info-projetos">Painel Climático</h3>
+          <br />
+
+          <div class="tec-projetos">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>API REST</span>
+            <span>OpenWeather</span>
+          </div>
+
           <p class="paragrafo-projetos">
-            Formulário desenvolvido com foco em usabilidade e validação de
-            dados. Interface simples, intuitiva e funcional. Projeto que reforça
-            minha evolução no front-end.
+            Aplicação de previsão climática que permite pesquisar cidades e
+            visualizar informações meteorológicas em tempo real, além da
+            previsão para os próximos dias, por meio de uma interface moderna.
           </p>
         </div>
 
-        <!--<div class="projetos-card">
-          <img src="img/frontend-proj.jpg" alt="" class="projetos-imagem" />
+        <div class="projetos-card" onclick="abrirProjeto2()">
+          <img src="img/sistema.png" alt="" class="projetos-imagem" />
           <div class="caixa-textos-projeto"></div>
-          <h3 class="info-projetos">Frontend</h3>
+          <h3 class="info-projetos">Sistema de Cadastro</h3>
+
+          <br />
+          <div class="tec-projetos">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>My SQL</span>
+          </div>
           <p class="paragrafo-projetos">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            laboriosam totam incidunt ut doloremque, eius dolores vero quibusdam
-            esse ducimus. Tenetur dicta rem, rerum ipsam quod dolores eaque.
-            Explicabo, quam.
+            Sistema de gerenciamento de funcionários desenvolvido com a
+            implementação completa das operações CRUD (Create, Read, Update e
+            Delete), permitindo o cadastro, consulta, atualização e exclusão de
+            registros de forma eficiente. O projeto demonstra conhecimentos em
+            desenvolvimento de aplicações completas, manipulação de dados e
+            integração entre diferentes camadas do sistema.
           </p>
-        </div> -->
+        </div>
 
         <!-- <div class="projetos-card">
           <img src="img/backend-proj.jpg" alt="" class="projetos-imagem" />

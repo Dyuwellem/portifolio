@@ -13,7 +13,10 @@ function enviarWhats(event) {
   window.open(url, "_blank");
 }
 
-// Abrir proj. formulário
 function abrirProjeto1() {
-  window.open("https://dyuwellem.github.io/login-system/index.html", "_blank");
+  window.open("https://dyuwellem.github.io/previsao-climatica/", "_blank");
+}
+
+function abrirProjeto2() {
+  window.open("https://dyuwellem.github.io/sistema-de-cadastro/", "_blank");
 }

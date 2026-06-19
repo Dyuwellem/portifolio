@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -17,7 +18,7 @@ body {
 .navegacao {
   position: fixed;
   top: 0;
-  background-color: rgba(141, 132, 132, 0.6);
+  background-color: rgba(235, 110, 185, 0.6);
   width: 100%;
   z-index: 100;
   padding: 1.5rem;
@@ -37,6 +38,8 @@ body {
   color: white;
   font-weight: 500;
   font-size: 20px;
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
   position: relative;
   padding: 0.5rem 0;
 }
@@ -69,15 +72,29 @@ body {
   width: 550px;
   height: 550px;
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(141, 132, 132, 0.6);
-  border: 4px solid rgba(141, 132, 132, 0.6);
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(234, 42, 157, 0.6);
+  border: 4px solid rgba(234, 42, 157, 0.6);
+}
+
+.container-foto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1800px;
+  height: 1100px;
+  margin-left: 500px;
 }
 
 h1 {
-  font-size: 2.5rem;
-  color: rgba(141, 132, 132);
+  font-size: 2rem;
+  color: rgba(234, 42, 157, 0.6);
   font-weight: bold;
-  margin: 8px;
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
 }
 
 .cabecalho-sub-titulo {
@@ -92,21 +109,27 @@ h1 {
 }
 
 .sobre-titulo {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
   color: white;
   text-align: center;
+  margin-right: 290px;
 }
 
 .sobre-caixa {
   padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
+  width: 900px;
+  height: 700px;
+  margin-right: 290px;
   border-radius: 16px;
   backdrop-filter: blur(10px);
 }
 
 .sobre-paragrafo {
   font-size: 1.3rem;
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
   align-items: center;
 }
 
@@ -125,7 +148,7 @@ h1 {
 .projetos-card {
   background-color: rgba(141, 132, 132, 0.6);
   border-radius: 16px;
-  border: 1px solid rgba(141, 132, 132, 0.6);
+  border: 1px solid rgba(235, 110, 185, 0.6);
   backdrop-filter: blur(5px);
   overflow: hidden;
   transition: all 0.3s ease;
@@ -139,7 +162,9 @@ h1 {
 
 .projetos-titulo {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
   margin-bottom: 50px;
 }
 
@@ -150,7 +175,11 @@ h1 {
 }
 
 .paragrafo-projetos {
-  line-height: 1.25rem;
+  line-height: 1.3rem;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
 }
 
 .caixa-textos-projeto {
@@ -158,7 +187,24 @@ h1 {
 }
 
 .info-projetos {
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
   margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.tec-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-left: 10px;
+}
+
+span {
+  border: solid rgba(235, 110, 185, 0.6) 1px;
+  background-color: rgba(235, 110, 185, 0.6);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .contatos {
@@ -167,7 +213,9 @@ h1 {
 
 .contatos-titulo {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
+  font-family: "Reggae One", system-ui;
+  font-style: normal;
   margin-bottom: 50px;
 }
 
@@ -221,178 +269,257 @@ h1 {
   background:
     radial-gradient(
       circle at 10% 20%,
-      rgba(141, 132, 132, 0.6) 0%,
+      rgba(245, 174, 251, 0.988) 0%,
       transparent 20%
     ),
     radial-gradient(
       circle at 90% 80%,
-      rgba(141, 132, 132, 0.988) 0%,
+      rgba(245, 174, 251, 0.988) 0%,
       transparent 20%
     ),
     rgb(0, 0, 0);
 }
 
-/* ================= RESPONSIVIDADE ================= */
-
-/* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {
+/* =========================
+   NOTEBOOKS GRANDES
+========================= */
+@media (max-width: 1600px) {
   .menu {
-    display: flex;
+    left: 0;
     justify-content: center;
-    position: relative;
-    left: 12px;
-    list-style: none;
     gap: 4rem;
   }
 
   .cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    top: 290px;
+    gap: 80px;
+    padding: 0 30px;
+  }
+
+  .container-foto {
+    width: auto;
+    height: auto;
+    margin-left: 0;
   }
 
   .foto-perfil {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-  }
-
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-  }
-
-  .cabecalho-sub-titulo {
-    font-size: 1.2rem;
-  }
-
-  .sobre-paragrafo {
-    font-size: 0.95rem;
-    line-height: 1.5rem;
-  }
-
-  .sobre-titulo {
-    font-size: 1.7rem;
-    color: white;
-    text-align: center;
-  }
-
-  .sobre-caixa {
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-  }
-
-  .sobre-paragrafo {
-    font-size: 1.3rem;
-    align-items: center;
-  }
-
-  .projetos-titulo {
-    text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 50px;
-  }
-
-  .contatos-titulo {
-    text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 50px;
-  }
-}
-
-/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (max-width: 1500px) {
-  .menu {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 12px;
-    list-style: none;
-    gap: 4rem;
-  }
-
-  .cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    top: 290px;
-  }
-
-  .foto-perfil {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-  }
-
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-  }
-
-  .cabecalho-sub-titulo {
-    font-size: 1.2rem;
-  }
-
-  .sobre-paragrafo {
-    font-size: 0.95rem;
-    line-height: 1.5rem;
+    width: 400px;
+    height: 400px;
   }
 
   .sobre {
-    display: flex;
-    padding: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
 
   .sobre-titulo {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 170px;
-    color: white;
-    text-align: center;
-    font-size: 1.7rem;
+    margin-right: 0;
   }
 
   .sobre-caixa {
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    position: relative;
-    bottom: 170px;
-  }
-
-  .sobre-paragrafo {
-    font-size: 1.3rem;
-    align-items: center;
-  }
-
-  .projetos-titulo {
-    text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 50px;
-  }
-
-  .contatos-titulo {
-    text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 50px;
+    width: 700px;
+    height: auto;
+    margin-right: 0;
   }
 }
 
-/*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (min-width: 768px) {
+/* =========================
+   NOTEBOOKS 1366x768
+========================= */
+@media (max-width: 1366px) {
+  .menu {
+    gap: 3rem;
+  }
+
+  .menu-link {
+    font-size: 18px;
+  }
+
+  .cabecalho {
+    gap: 50px;
+  }
+
+  .foto-perfil {
+    width: 320px;
+    height: 320px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .cabecalho-sub-titulo {
+    font-size: 1.3rem;
+  }
+
+  .sobre-caixa {
+    width: 600px;
+  }
+
+  .sobre-paragrafo {
+    font-size: 1.1rem;
+  }
+
+  .projetos-caixa {
+    max-width: 1000px;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media (max-width: 1024px) {
+  .menu {
+    left: 0;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 20px 50px;
+  }
+
+  .container-foto {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 250px;
+  }
+
+  .foto-perfil {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-titulo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .sobre-caixa {
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+/* =========================
+   CELULARES
+========================= */
+@media (max-width: 768px) {
+  .menu {
+    gap: 1rem;
+  }
+
+  .menu-link {
+    font-size: 14px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .container-foto {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .foto-perfil {
+    width: 220px;
+    height: 220px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .cabecalho-sub-titulo {
+    font-size: 1rem;
+  }
+
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .sobre-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .sobre-caixa {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .sobre-paragrafo {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .projetos-caixa {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos-imagem {
+    height: 180px;
+  }
+
+  .paragrafo-projetos {
+    font-size: 0.9rem;
+  }
+
+  .contatos {
+    padding: 4rem 1rem;
+  }
+
+  .formulario-contato {
+    width: 100%;
+  }
+}
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+@media (max-width: 480px) {
+  .foto-perfil {
+    width: 180px;
+    height: 180px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .cabecalho-sub-titulo {
+    font-size: 0.9rem;
+  }
+
+  .sobre-paragrafo {
+    font-size: 0.8rem;
+  }
+
+  .menu-link {
+    font-size: 12px;
+  }
+
+  span {
+    padding: 6px;
+    font-size: 0.7rem;
+  }
 }
