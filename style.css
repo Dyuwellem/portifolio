@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  left: 325px;
+  left: 200px;
   list-style: none;
   gap: 6rem;
 }
@@ -82,9 +82,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1800px;
-  height: 1100px;
-  margin-left: 500px;
+  margin-left: 0px;
 }
 
 h1 {
@@ -114,14 +112,12 @@ h1 {
   font-style: normal;
   color: white;
   text-align: center;
-  margin-right: 290px;
 }
 
 .sobre-caixa {
   padding: 2rem;
-  width: 900px;
-  height: 700px;
-  margin-right: 290px;
+  max-width: 800px;
+  margin-right: 0;
   border-radius: 16px;
   backdrop-filter: blur(10px);
 }
