@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  left: 180px;
+  left: 100px;
   list-style: none;
   gap: 6rem;
 }
